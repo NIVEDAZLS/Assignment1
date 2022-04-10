@@ -13,5 +13,4 @@ df_2=df_1.loc[r,[28,31,25]]
 new_header=df_2.iloc[0]
 df_2.columns=new_header
 df_3=df_2.drop('Indicator Name')
-df_3
 st.table(df_3)
