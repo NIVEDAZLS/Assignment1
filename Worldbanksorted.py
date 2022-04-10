@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 import altair as alt
 
+
 df=pd.read_csv('World_Bank_India.csv',skiprows=4)
 df_1=df.T
 pd.set_option('display.max_columns',1443)
@@ -13,3 +14,4 @@ new_header=df_2.iloc[0]
 df_2.columns=new_header
 df_3=df_2.drop('Indicator Name')
 df_3
+st.table(df_3)
